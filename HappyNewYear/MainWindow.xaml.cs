@@ -41,14 +41,8 @@ namespace HappyNewYear
             }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            this._user32Service.HideFromAltTab();
-        }
+        private void Window_Loaded(object sender, RoutedEventArgs e) => this._user32Service.HideFromAltTab();
 
-        private void Window_Activated(object sender, EventArgs e)
-        {
-            this._user32Service.ShoveToBackground();
-        }
+        private void Window_Activated(object sender, EventArgs e) => this._user32Service.ShoveToBackground();
     }
 }
